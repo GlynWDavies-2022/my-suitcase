@@ -1,0 +1,26 @@
+.header {
+    border: 1px solid #ffffff;
+    height: 20%;
+    padding: 5px;
+}
+
+.form {
+    border: 1px solid #ffffff;
+    height: 10%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.packing-list {
+    border: 1px solid #ffffff;
+    height: 60%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.statistics {
+    border: 1px solid #ffffff;
+    height: 10%;
+    margin-top: 5px;
+    padding: 5px;
+}

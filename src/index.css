@@ -7,7 +7,19 @@
 }
 
 :root {
+    background-color: #000000;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
+    height: 97vh;
+    padding: 5px;
+}
+
+body {
+    height: inherit;
+}
+
+#root {
+    height: inherit;
 }
 
 .inter-300 {
