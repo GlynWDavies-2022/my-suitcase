@@ -1,7 +1,7 @@
 function Statistics() {
     return (
         <div className='statistics'>
-            <h1>Statistics</h1>
+            <p>You have n items on your list. n% are already packed.</p>
         </div>
     );
 }

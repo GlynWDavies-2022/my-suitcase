@@ -1,14 +1,50 @@
 .header {
+    align-items: center;
     border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
     height: 20%;
+    justify-content: space-evenly;
     padding: 5px;
 }
 
+.header > .image {
+    height: 150px;
+}
+
 .form {
+    align-items: center;
     border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
     height: 10%;
+    justify-content: center;
     margin-top: 5px;
     padding: 5px;
+}
+
+.form > label {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.form > .quantity {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    padding: 0.25rem;
+}
+
+.form > .item {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    padding: 0.25rem;
+}
+
+.form > .add {
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 0.25rem 1rem;
 }
 
 .packing-list {
@@ -19,8 +55,13 @@
 }
 
 .statistics {
+    align-items: center;
     border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
     height: 10%;
+    justify-content: center;
     margin-top: 5px;
     padding: 5px;
 }
