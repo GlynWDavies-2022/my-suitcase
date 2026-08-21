@@ -30,21 +30,33 @@
 }
 
 .form > .quantity {
+    border-radius: 5px;
     font-size: 1.25rem;
     margin-right: 1rem;
+    outline: none;
     padding: 0.25rem;
 }
 
 .form > .item {
+    border-radius: 5px;
     font-size: 1.25rem;
     margin-right: 1rem;
+    outline: none;
     padding: 0.25rem;
+    width: 25rem;
 }
 
 .form > .add {
     border-radius: 1rem;
+    cursor: pointer;
     font-size: 1.25rem;
     padding: 0.25rem 1rem;
+}
+
+.form > .add:hover {
+    background-color: grey;
+    border: 1px solid grey;
+    color: white;
 }
 
 .packing-list {

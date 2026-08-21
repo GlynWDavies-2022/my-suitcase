@@ -1,6 +1,10 @@
 function Form() {
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
+
     return (
-        <form className='form'>
+        <form className='form' onSubmit={handleSubmit}>
             <label>What do you need for your trip?&nbsp;</label>
             <select className='quantity'>
                 {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
