@@ -1,8 +1,13 @@
-function Item() {
+function Item({ item }) {
     return (
-        <>
-            <h2>Item</h2>
-        </>
+        <li className='item'>
+            <input type='checkbox'></input>
+            <span className='quantity'>{item.packed ? '0' : item.quantity}</span>
+            <span className={`description ${!item.packed ? '' : 'packed'}`}>{item.description}</span>
+            <button className='delete'>
+                <span>❌</span>
+            </button>
+        </li>
     );
 }
 

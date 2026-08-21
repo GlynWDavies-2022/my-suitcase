@@ -1,10 +1,10 @@
 function Header() {
     return (
-        <div className='header'>
-            <img className='image' src='travel.jpg' alt='Image placeholder' />
+        <header className='header'>
+            <img className='image' src='colosseum.jpg' alt='Image placeholder' />
             <h1>My Suitcase</h1>
             <img className='image' src='suitcase.jpg' alt='Image placeholder' />
-        </div>
+        </header>
     );
 }
 
