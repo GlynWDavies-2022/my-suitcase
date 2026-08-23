@@ -20,7 +20,7 @@
     flex-direction: row;
     height: 10%;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 5px;
 }
 
@@ -65,9 +65,9 @@
     display: grid;
     grid-auto-rows: max-content;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    height: 60%;
+    height: 56%;
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px 250px;
 }
 
@@ -115,6 +115,6 @@
     font-size: 1.5rem;
     height: 10%;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 5px;
 }
