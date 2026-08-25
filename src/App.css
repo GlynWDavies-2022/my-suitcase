@@ -25,7 +25,7 @@
 }
 
 .form > label {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 1rem;
 }
 
@@ -59,13 +59,30 @@
     color: white;
 }
 
+.actions {
+    align-items: center;
+    border: 1px solid #ffffff;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.actions > select {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 3px;
+}
+
 .packing-list {
     align-content: start;
     border: 1px solid #ffffff;
     display: grid;
     grid-auto-rows: max-content;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    height: 56%;
+    height: 46%;
     list-style-type: none;
     margin-top: 10px;
     padding: 10px 250px;
@@ -89,12 +106,12 @@
 }
 
 .item > .description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 1rem;
 }
 
 .item > .quantity {
-    color: #0ff4c6;
+    color: #8d8e8e;
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 1rem;
@@ -112,8 +129,8 @@
     border: 1px solid #ffffff;
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
-    height: 10%;
+    font-size: 1.4rem;
+    height: 8%;
     justify-content: center;
     margin-top: 10px;
     padding: 5px;

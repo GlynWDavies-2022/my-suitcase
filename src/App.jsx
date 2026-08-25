@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Actions from './components/Actions';
 import Form from './components/Form';
 import Header from './components/Header';
 import PackingList from './components/PackingList';
@@ -14,6 +15,7 @@ const initialItems = [
 
 function App() {
     const [items, setItems] = useState(initialItems);
+    const [sortBy, setSortBy] = useState('input');
 
     function handleAddItems(item) {
         setItems((items) => [...items, item]);
@@ -31,8 +33,9 @@ function App() {
         <>
             <Header />
             <Form onAddItems={handleAddItems} items={items} />
+            <Actions sortBy={sortBy} setSortBy={setSortBy} items={items} />
             <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-            <Statistics />
+            <Statistics items={items} />
         </>
     );
 }

@@ -10,10 +10,10 @@ function Form({ onAddItems }) {
         const newId = Math.floor(Math.random() * 10000);
         console.log(newId);
         const newItem = { id: newId, description, quantity, packed: false };
-        console.log(newItem);
+        if (newItem.quantity === 0) newItem.quantity = 1;
         onAddItems(newItem);
         setDescription('');
-        setQuantity(0);
+        setQuantity(1);
     }
 
     return (
