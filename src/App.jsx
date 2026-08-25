@@ -19,6 +19,10 @@ function App() {
         setItems((items) => [...items, item]);
     }
 
+    function handleToggleItem(id) {
+        setItems((items) => items.map((item) => (item.id === id ? { ...item, packed: !item.packed } : item)));
+    }
+
     function handleDeleteItem(id) {
         setItems((items) => items.filter((item) => item.id !== id));
     }
@@ -27,7 +31,7 @@ function App() {
         <>
             <Header />
             <Form onAddItems={handleAddItems} items={items} />
-            <PackingList items={items} onDeleteItem={handleDeleteItem} />
+            <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
             <Statistics />
         </>
     );
