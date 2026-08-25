@@ -6,14 +6,16 @@ function Statistics({ items }) {
 
     return (
         <footer className='statistics'>
+            {items.length === 0 ? <p>Add some items to the list!</p> : ''}
             {percentagePacked < 100 ? (
                 <p>
                     You have {numItems} items on your list. You are{' '}
                     <span style={{ color: '#FF9770' }}>{percentagePacked}%</span> packed now.
                 </p>
             ) : (
-                <p style={{ color: '#13C4A3' }}>You are packed and ready to go!</p>
+                ''
             )}
+            {percentagePacked === 100 ? <p style={{ color: '#13C4A3' }}>You are packed and ready to go!</p> : ''}
         </footer>
     );
 }

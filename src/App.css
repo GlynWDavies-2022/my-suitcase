@@ -76,6 +76,18 @@
     padding: 3px;
 }
 
+.clear {
+    background-color: #c20114;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    outline: none;
+    padding: 6px 15px;
+}
+
 .packing-list {
     align-content: start;
     border: 1px solid #ffffff;

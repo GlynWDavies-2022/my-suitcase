@@ -7,14 +7,8 @@ import PackingList from './components/PackingList';
 import Statistics from './components/Statistics';
 import './App.css';
 
-const initialItems = [
-    { id: 1, description: 'Passport', quantity: 2, packed: false },
-    { id: 2, description: 'Toothpaste', quantity: 1, packed: false },
-    { id: 3, description: 'Toothbrush', quantity: 1, packed: false },
-];
-
 function App() {
-    const [items, setItems] = useState(initialItems);
+    const [items, setItems] = useState([]);
     const [sortBy, setSortBy] = useState('input');
 
     function handleAddItems(item) {
@@ -33,7 +27,7 @@ function App() {
         <>
             <Header />
             <Form onAddItems={handleAddItems} items={items} />
-            <Actions sortBy={sortBy} setSortBy={setSortBy} items={items} />
+            <Actions sortBy={sortBy} setSortBy={setSortBy} items={items} setItems={setItems} />
             <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
             <Statistics items={items} />
         </>

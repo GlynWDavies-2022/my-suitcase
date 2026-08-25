@@ -1,4 +1,4 @@
-function Actions({ sortBy, setSortBy, items }) {
+function Actions({ sortBy, setSortBy, items, setItems }) {
     let sortedItems = items;
 
     if (sortBy === 'input') sortedItems = { items };
@@ -14,6 +14,9 @@ function Actions({ sortBy, setSortBy, items }) {
                 <option value='description'>Sort by description</option>
                 <option value='packed'>Sort by packed status</option>
             </select>
+            <button className='clear' onClick={() => setItems([])}>
+                Clear List
+            </button>
         </div>
     );
 }
